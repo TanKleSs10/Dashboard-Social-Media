@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Estilos para el modo claro */
+.bicolor-bg::before,
+.bicolor-bg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.bicolor-bg::before {
+  top: 0;
+  height: 32%; /* Ajusta la altura al 32% de la página */
+  background-color: hsl(225, 100%, 98%); /* Very Pale Blue */
+}
+
+.bicolor-bg::after {
+  bottom: 0;
+  height: 68%; /* El 50% restante de la página */
+  background-color: hsl(0, 0%, 100%); /* White */
+}
+
+/* Estilos para el modo oscuro */
+.dark .bicolor-bg::before {
+  background-color: hsl(232, 19%, 15%); /* Adjusted for dark mode */
+}
+
+.dark .bicolor-bg::after {
+  background-color: hsl(230, 17%, 14%); /* Adjusted for dark mode */
+}
+@media only screen and (max-width: 375px) {
+  .bicolor-bg::before {
+    top: 0;
+    height: 10%; /* Ajusta la altura al 32% de la página */
+    background-color: hsl(225, 100%, 98%); /* Very Pale Blue */
+  }
+  
+  .bicolor-bg::after {
+    bottom: 0;
+    height: 90%; /* El 50% restante de la página */
+    background-color: hsl(0, 0%, 100%); /* White */
+  }
+  
+}
