@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/dashboard-social-media---react---ts-9Vb5xtUu--)
-- Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://dashboard-socialmedia.netlify.app/))
+- Live Site URL: [Add live site URL here](https://dashboard-socialmedia.netlify.app/)
 
 ## My process
 
